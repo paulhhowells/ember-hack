@@ -1,3 +1,10 @@
+# OS
+[Tt]humbs.db
+.Trashes
+.DS_Store
+.DS_Store?
+__*
+
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
