@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #eee;
+}
+
+.body-slice {
+  width: 100%;
+}
+
+.body-slice__inner {
+  overflow: hidden;
+  max-width: 48em;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #fff;
+}
