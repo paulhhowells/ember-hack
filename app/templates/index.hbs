@@ -6,6 +6,15 @@
   {{/link-to}}
 </p>
 
-{{days-to-go}}
+model.plan: {{ model.plan.days }} <br />
+model.things: <br />
 
-{{outlet}}
+<ul>
+  {{#each model.things as |thing|}}
+    <li>Widget: {{thing.widget}}!</li>
+  {{/each}}
+</ul>
+
+<br />
+Days To Go: {{days-to-go}} <br />
+Outlet: {{outlet}} <br />
