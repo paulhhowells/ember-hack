@@ -1,6 +1,38 @@
 export default function() {
   this.namespace = '/api';
 
+  this.get('/plan', function() {
+    return {
+      data: {
+        type: 'plan',
+        id: 'plan-id',
+        attributes: {
+          days: 42,
+          ready: true,
+        }
+      }
+    };
+  });
+
+  this.get('/things', function() {
+    return {
+      data: [{
+        type: 'thing',
+        id: 'thing-0',
+        attributes: {
+          widget: 'deluxe',
+        }
+      },
+      {
+        type: 'thing',
+        id: 'thing-1',
+        attributes: {
+          widget: 'supreme',
+        }
+      }]
+    };
+  });
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
