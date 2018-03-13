@@ -7,9 +7,7 @@ export default Route.extend({
       plan: this.get('store')
         .queryRecord('plan', {})
         .then(function (plan) {
-
-          console.log('id', plan.id);
-          console.log('days', plan.get('days'));
+          console.log('queryRecord plan days', plan.get('days'), plan.id);
 
           return plan;
         }),
