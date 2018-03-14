@@ -19,3 +19,11 @@ body {
   padding: 1em;
   background-color: #fff;
 }
+
+.component {
+  display: inline-block;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border: 1px solid #69f;
+  border-radius: 0.25em;
+}
