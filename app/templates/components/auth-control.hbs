@@ -1,5 +1,6 @@
 <div class="auth-control component">
-  sign in
-  sign out
+  <button class="button" {{ action "signIn" }}>Sign In</button>
+  <button class="button" {{ action "signOut" }}>Sign Out</button>
+
   {{yield}}
 </div>
