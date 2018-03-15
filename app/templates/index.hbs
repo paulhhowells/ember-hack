@@ -1,19 +1,21 @@
-<h2>Home</h2>
+<div class="template">
+  <h2>Home</h2>
 
-<p>
-  {{#link-to "account-details"}}
-    Account Details
-  {{/link-to}}
-</p>
+  <p>
+    {{#link-to "account-details"}}
+      Account Details
+    {{/link-to}}
+  </p>
 
-<!-- model.plan.days: {{ model.plan.days }} -->
+  <!-- model.plan.days: {{ model.plan.days }} -->
 
-<ul>
-  {{#each model.things as |thing|}}
-    <li>Widget: {{ thing.widget }}!</li>
-  {{/each}}
-</ul>
+  <ul>
+    {{#each model.things as |thing|}}
+      <li>Widget: {{ thing.widget }}!</li>
+    {{/each}}
+  </ul>
 
-{{ days-to-go days=model.plan.days }}
-{{ auth-control }}
-{{ outlet }}
+  {{ days-to-go days=model.plan.days }}
+  {{ auth-control }}
+  {{ outlet }}
+</div>
